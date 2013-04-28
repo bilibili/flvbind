@@ -1,0 +1,57 @@
+yamdi-1.8:
+   * [Add] Replace input file with output file with -w
+   * [Add] Keyframes for audio only files with -a
+
+yamdi-1.7:
+   * [Fix] off-by-one bug while indexing an FLV file
+
+yamdi-1.6:
+   * [Fix] Large file support
+   * [Fix] VP62 occasional wrong width/height detection [jgreer-zencoder]
+   * [Add] onLastKeyframe event with -k
+   * [Add] onLastSecond event with -s. -l deprecated
+   * [Add] Strip all metadata with -M
+   * [Add] Omit the keyframes tag in the XML output with -X.
+
+yamdi-1.5:
+   * [Fix] Segfault on empty files under *nix [zas_]
+   * [Fix] VP62 occasional zero height [xtat]
+   * [Add] AVC/H.264 support
+   * [Add] Input file can be read from stdin
+
+yamdi-1.4:
+   * [Fix] The onLastSecond event did not have the correct timestamp
+   * [Add] Source code compatible with Win32 (MinGW32) [sfyang]
+
+yamdi-1.3:
+   * [Fix] SCRIPTDATAVARIABLEEND tag of the onMetaData object was missing
+   * [Add] XML output of the meta data with option -x [teshock]
+   * [Add] Makefile and manpage [xtat]
+
+yamdi-1.2:
+   * [Fix] Width and height calculation of ScreenVideo stream was
+           wrong
+   * [Add] onLastSecond event with option -l
+
+yamdi-1.1:
+   * [Fix] Width and height calculation of H.263 video streams with
+           custom 16bit width and height was wrong.
+
+yamdi-1.0:
+   * [Add] Width and height detection for VP6 alpha video
+
+yamdi-1.0beta3:
+   * [Add] Width and height detection for VP6 video (without
+           alpha) [hephooey]
+   * [Add] More metadata: calculated framerate, videodatarate and
+           audiodatarate.
+
+yamdi-1.0beta2:
+   * [Fix] The last video tag or audio tag has not been copied
+   * [Add] If the video stream is Sorenson H.263, Screen Video or
+           Screen Video 2 the width and height will be in the
+           meta data.
+
+yamdi-1.0beta:
+   * Initial release
+
